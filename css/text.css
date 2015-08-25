@@ -1,0 +1,32 @@
+header, main, footer {
+  padding-left: 240px;
+}
+
+.material-icons {
+  font-size: 40px;
+}
+
+.mainGradient {
+  background: -webkit-linear-gradient(#6699FF, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6699FF, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6699FF, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6699FF, white); /* Standard syntax */
+}
+
+.nameText {
+  color: #FFFFFF;
+}
+
+.programText{
+  color: #6699FF;
+}
+
+.lightText {
+  color: white;
+}
+
+@media only screen and (max-width : 736px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
