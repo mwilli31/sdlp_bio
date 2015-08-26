@@ -61,6 +61,51 @@
       </div>
     </div>
 
+    <!-- Fun facts/Personalize this part -->
+    <div class="row grey lighten-3">
+      <div class="col s12">
+        <h3 class="aboutMe roboto fw-100">About Me</h3>
+        <div class="row">
+          <div class="col s4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/profile.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/profile.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/profile.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <!-- program interests -->
       <div class="col s6">
@@ -68,13 +113,9 @@
           <div class="row valign-wrapper">
             <div class="col s12">
               <h4 class="roboto fw-200 left-align">Program Interests</h4>
-              <table>
-                <tbody>
-                  <tr ng-repeat="interest in interests">
-                    <td>- {{interest}}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row" ng-repeat="interest in interests">
+                <div class="row"><div class="col s12"><h6 class="roboto fw-400">- {{interest}}</h6></div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -158,23 +199,13 @@
 
 
     <div class="row">
-
-      <div class="col s6">
+      <div class="col s12">
         <!-- experience -->
         <div class="row">
           <div class="card-panel grey lighten-5 z-depth-1">
             <div class="row valign-wrapper">
               <h3 class="flow-text">experience</h3>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fun facts/Personalize this part -->
-      <div class="col s6">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <h3 class="flow-text">fun facts</h3>
           </div>
         </div>
       </div>
