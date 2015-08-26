@@ -14,7 +14,7 @@
 
   </head>
 
-  <body class="blue">
+  <body ng-controller="MainController" class="blue">
     <!-- body templating  -->
     <div class="row headerBackground">
       <!-- start header band -->
@@ -30,29 +30,29 @@
         <!-- name,education,ge-business,location -->
         <div class="col s8">
             <div class"row">
-              <h1 class="nameText gv center-align">Michael Williams</h1>
+              <h1 class="nameText gv center-align">{{name}}</h1>
             </div>
             <div class"row">
               <div class="col s4">
                 <div class="container iconPadding">
                   <img src="images/ge.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
                 </div>
-                <h5 class="nameText roboto fw-100 center-align">GE Intelligent</h5>
-                <h5 class="nameText noPadding roboto fw-100 center-align">Platforms</h5>
+                <h5 class="nameText roboto fw-100 center-align">{{geBusiness1}}</h5>
+                <h5 class="nameText noPadding roboto fw-100 center-align">{{geBusiness2}}</h5>
               </div>
               <div class="col s4">
                 <div class="container iconPadding">
                   <img src="images/locationIcon.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
                 </div>
-                <h5 class="nameText roboto fw-100 center-align">Foxboro, MA</h5>
-                <h5 class="nameText noPadding roboto fw-100 center-align">USA</h5>
+                <h5 class="nameText roboto fw-100 center-align">{{locationCityState}}</h5>
+                <h5 class="nameText noPadding roboto fw-100 center-align">{{locationCountry}}</h5>
               </div>
               <div class="col s4">
                 <div class="container iconPadding">
                   <img src="images/education.png" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
                 </div>
-                <h5 class="nameText roboto fw-100 center-align">University of</h5>
-                <h5 class="nameText noPadding roboto fw-100 center-align">Notre Dame</h5>
+                <h5 class="nameText roboto fw-100 center-align">{{education1}}</h5>
+                <h5 class="nameText noPadding roboto fw-100 center-align">{{education2}}</h5>
             </div>
           </div>
         </div>
@@ -66,7 +66,16 @@
       <div class="col s6">
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
-            <h3 class="condensed light flow-text">program interests</h3>
+            <div class="col s12">
+              <h4 class="roboto fw-200 left-align">Program Interests</h4>
+              <table>
+                <tbody>
+                  <tr ng-repeat="interest in interests">
+                    <td>- {{interest}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -82,11 +91,7 @@
     </div>
 
     <!-- skills -->
-    <div class="row" ng-init="skills = [{name:'JS',perc:'75%',goal:'95%'},
-                                        {name:'HTML',perc:'92%',goal:'98%'}];
-                              skillsDormant = [{name:'C++',perc:'65%'},
-                                              {name:'C',perc:'85%'},
-                                              {name:'Objective-C',perc:'75%'}];">
+    <div class="row">
       <div class="col s12">
         <div class="card-panel grey lighten-5 z-depth-1">
           <h3 class="flow-text">Skills</h3>
