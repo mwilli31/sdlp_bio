@@ -38,6 +38,11 @@
   padding-top: 0px;
 }
 
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
 .nameText {
   color: #FFFFFF;
 }

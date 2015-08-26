@@ -17,6 +17,14 @@ angular.module('app', ['ui.router'])
     $scope.interests.push("Understand our industry partners' pain points and the vision of GE-IP");
     $scope.interests.push("Apply Fastworks and Design Thinking processes on my projects to quickly build useful software for our customers");
 
+    //Rotations
+    $scope.rotations = [];
+    var rotation1 = {title: "Proficy Historian Analysis",
+                    location: "Foxboro, MA",
+                    description1: "QA functional automated test development using UFT to streamline our test procedures for continous integration of our software",
+                    description2: "UI front end development for PHA 6.0/7.0 using AngularJS, HTML5, & CSS"};
+    $scope.rotations.push(rotation1);
+
 
     //Skills
     $scope.skills =         [{name:'JS',perc:'75%',goal:'95%'},
