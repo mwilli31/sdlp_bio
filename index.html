@@ -10,10 +10,11 @@
 
     <link type="text/css" rel="stylesheet" href="css/text.css">
     <link type="text/css" rel="stylesheet" href="css/skills.css">
+    <link type="text/css" rel="stylesheet" href="css/cards.css">
 
   </head>
 
-  <body>
+  <body class="blue">
     <!-- body templating  -->
     <div class="row headerBackground">
       <!-- start header band -->
@@ -60,123 +61,91 @@
       </div>
     </div>
 
-      <div class="row">
-        <!-- program interests -->
-        <div class="col s6">
-          <div class="card-panel grey lighten-5 z-depth-1">
-            <div class="row valign-wrapper">
-              <h3 class="condensed light flow-text">program interests</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- rotations -->
-        <div class="col s6">
-          <div class="card-panel grey lighten-5 z-depth-1">
-            <div class="row valign-wrapper">
-              <h3 class="flow-text">rotations</h3>
-            </div>
+    <div class="row">
+      <!-- program interests -->
+      <div class="col s6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <h3 class="condensed light flow-text">program interests</h3>
           </div>
         </div>
       </div>
 
-
-      <div class="row">
-
-        <div class="col s6">
-          <!-- experience -->
-          <div class="row">
-            <div class="card-panel grey lighten-5 z-depth-1">
-              <div class="row valign-wrapper">
-                <h3 class="flow-text">experience</h3>
-              </div>
-            </div>
+      <!-- rotations -->
+      <div class="col s6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <h3 class="flow-text">rotations</h3>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- skills -->
-          <div class="row" ng-init="skills = [{name:'JS',perc:'75%',goal:'95%'},
-                                              {name:'HTML',perc:'92%',goal:'98%'}];
-                                    skillsDormant = [{name:'C++',perc:'65%'},
-                                                    {name:'C',perc:'85%'},
-                                                    {name:'Objective-C',perc:'75%'}];">
-            <div class="card-panel grey lighten-5 z-depth-1">
-              <h3 class="flow-text">Skills: Current Ability and Growth Goal</h3>
-              <div class="row valign-wrapper">
-
-                <!-- skill #1 -->
-                <!-- <div class="radial-progress" data-progress="10">
-                  <div class="circle">
-                    <div class="mask full">
-                      <div class="fill"></div>
-                    </div>
-                    <div class="mask half">
-                      <div class="fill"></div>
-                      <div class="fill fix"></div>
-                    </div>
-                    <div class="shadow"></div>
-                  </div>
-                  <div class="inset">
-                    <div class="percentage"></div>
-                  </div>
-                </div> -->
-
-              </div>
-              <div class="row valign-wrapper" ng-repeat="skill in skills" >
-
+    <!-- skills -->
+    <div class="row" ng-init="skills = [{name:'JS',perc:'75%',goal:'95%'},
+                                        {name:'HTML',perc:'92%',goal:'98%'}];
+                              skillsDormant = [{name:'C++',perc:'65%'},
+                                              {name:'C',perc:'85%'},
+                                              {name:'Objective-C',perc:'75%'}];">
+      <div class="col s12">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <h3 class="flow-text">Skills</h3>
+          <div class="row">
+            <div class="col s4">
+              <div class="row valign-wrapper" ng-repeat="skill in skills">
                 <div class="progress">
                   <div class="goal" style="width: {{skill.goal}}">
                     <h6 class="nameText noPadding roboto fw-100 right-align">{{skill.goal}}</h6>
                     <div class="determinate" style="width: {{skill.perc}}">
-
-                      <div class="row valign-wrapper">
-                        <div class="col s6">
-                          <h6 class="nameText noPadding roboto fw-100 left-align">{{skill.name}}</h6>
-                        </div>
-                        <div class="col s6">
-                          <h6 class="nameText noPadding roboto fw-100 right-align">{{skill.perc}}</h6>
-                        </div>
-                      </div>
-
+                      <div class="col s6"><h6 class="nameText noPadding roboto fw-100 left-align">{{skill.name}}</h6></div>
+                      <div class="col s6"><h6 class="nameText noPadding roboto fw-100 right-align">{{skill.perc}}</h6></div>
                     </div>
                   </div>
                 </div>
-
               </div>
+            </div>
 
+            <div class="col s4">
               <div class="row valign-wrapper" ng-repeat="skill in skillsDormant" >
-
                 <div class="progress">
                     <div class="determinate" style="width: {{skill.perc}}">
-
                       <div class="row valign-wrapper">
                         <div class="col s6">
-                          <h6 class="nameText noPadding roboto fw-100 left-align">{{skill.name}}</h6>
-                        </div>
+                          <h6 class="nameText noPadding roboto fw-100 left-align">{{skill.name}}</h6></div>
                         <div class="col s6">
-                          <h6 class="nameText noPadding roboto fw-100 right-align">{{skill.perc}}</h6>
-                        </div>
+                          <h6 class="nameText noPadding roboto fw-100 right-align">{{skill.perc}}</h6></div>
                       </div>
-
                     </div>
                 </div>
-
               </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <!-- Fun facts/Personalize this part -->
-        <div class="col s6">
-          <div class="card-panel grey lighten-5 z-depth-1">
-            <div class="row valign-wrapper">
-              <h3 class="flow-text">fun facts</h3>
             </div>
           </div>
         </div>
       </div>
+
+
+    <div class="row">
+
+      <div class="col s6">
+        <!-- experience -->
+        <div class="row">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <h3 class="flow-text">experience</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fun facts/Personalize this part -->
+      <div class="col s6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <h3 class="flow-text">fun facts</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- end body templating -->

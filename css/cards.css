@@ -1,0 +1,12 @@
+.card-panel {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0 0.5rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+}
+
+.row {
+  margin: 0rem 0 0rem 0;
+}

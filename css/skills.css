@@ -3,6 +3,7 @@
 .progress {
   height: 25px;
   background-color: #d5dadd;
+  margin: 0.2rem 0 0.2rem 0;
 }
 .progress .goal .determinate {
   position: absolute;
@@ -16,6 +17,9 @@
   -o-transition: width .3s linear;
   -ms-transition: width .3s linear;
   transition: width .3s linear;
+}
+.progress .determinate {
+  background-color: #003399;
 }
 .progress .goal {
   position: absolute;
