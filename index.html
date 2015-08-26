@@ -85,14 +85,14 @@
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s12">
-              <h4 class="roboto fw-400 left-align">SDLP Rotations</h4>
+              <h4 class="roboto fw-200 left-align">SDLP Rotations</h4>
               <div class="row" ng-repeat="rotation in rotations">
                 <div class="row valign-wrapper" >
-                  <div class="col s9"><h5 class="roboto fw-200">{{rotation.title}}</h5></div>
+                  <div class="col s9"><h5 class="roboto fw-400">{{rotation.title}}</h5></div>
                   <div class="col s3"><h6 class="roboto fw-200">{{rotation.location}}</h6></div>
                 </div>
-                <div class="row"><div class="col s12"><h6 class="roboto fw-400">{{rotation.description1}}</h6></div></div>
-                <div class="row"><div class="col s12"><h6 class="roboto fw-400">{{rotation.description2}}</h6></div></div>
+                <div class="row"><div class="col s12"><h6 class="roboto fw-400">- {{rotation.description1}}</h6></div></div>
+                <div class="row"><div class="col s12"><h6 class="roboto fw-400">- {{rotation.description2}}</h6></div></div>
               </div>
             </div>
           </div>

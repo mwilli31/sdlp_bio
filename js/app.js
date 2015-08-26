@@ -21,7 +21,7 @@ angular.module('app', ['ui.router'])
     $scope.rotations = [];
     var rotation1 = {title: "Proficy Historian Analysis",
                     location: "Foxboro, MA",
-                    description1: "QA functional automated test development using UFT to streamline our test procedures for continous integration of our software",
+                    description1: "QA functional automated test development using UFT for continous integration of our software",
                     description2: "UI front end development for PHA 6.0/7.0 using AngularJS, HTML5, & CSS"};
     $scope.rotations.push(rotation1);
 
