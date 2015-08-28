@@ -66,39 +66,14 @@
       <div class="col s12">
         <h3 class="aboutMe roboto fw-100">About Me</h3>
         <div class="row">
-          <div class="col s4">
-            <div class="card">
+          <div class="col s4" ng-repeat="fact in facts">
+            <div class="card small">
               <div class="card-image">
-                <img src="images/profile.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="images/factOne.jpg" class="responsive-img">
+                <span class="card-title">{{fact.title}}</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/profile.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/profile.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <p class="roboto fw-400">{{fact.description}}</p>
               </div>
             </div>
           </div>
@@ -146,13 +121,14 @@
           <div class="row valign-wrapper">
             <div class="col s12">
               <h4 class="roboto fw-200 left-align">SDLP Side Projects</h4>
-              <table>
-                <tbody>
-                  <tr ng-repeat="project in projects">
-                    <td>- {{projects}}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row" ng-repeat="project in projects">
+                <div class="row valign-wrapper" >
+                  <div class="col s9"><h5 class="roboto fw-400">{{project.title}}</h5></div>
+                  <div class="col s3"><h6 class="roboto fw-200">{{project.location}}</h6></div>
+                </div>
+                <div class="row"><div class="col s12"><h6 class="roboto fw-400">- {{project.description1}}</h6></div></div>
+                <div class="row"><div class="col s12"><h6 class="roboto fw-400">- {{project.description2}}</h6></div></div>
+              </div>
             </div>
           </div>
         </div>

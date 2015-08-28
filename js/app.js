@@ -10,6 +10,28 @@ angular.module('app', ['ui.router'])
     $scope.locationCityState = "Foxboro, MA"
     $scope.locationCountry = "USA"
 
+    //About Me
+    $scope.facts = [];
+    var fact1 = {
+                title: "World Traveler",
+                imageName: "images/factOne.jpg",
+                description: "I studied abroad at Oxford for an entire year.  While there I loved taking trips all around Europe.  I hope I continue to find times to travel the world!"
+              };
+  var fact2 = {
+              title: "Hockey Player",
+              imageName: "images/factTwo.jpg",
+              description: "Playing hockey was a given growing up in Minnesota. I continue my love for playing hockey today. One of my fondest memories playing was winning the UK Championship representing Oxford University."
+            };
+  var fact3 = {
+              title: "World Traveler",
+              imageName: "images/factOne.jpg",
+              imageDescription: "Cinque Terre, Italy",
+              description: "I studied abroad at Oxford for an entire year.  While there I loved taking trips all around Europe.  I hope I continue to find times to travel the world!"
+            };
+    $scope.facts.push(fact1);
+    $scope.facts.push(fact2);
+    $scope.facts.push(fact3);
+
     //Program Interests
     $scope.interests = [];
     $scope.interests.push("Web Development & UI Design for Industrial Big Data Analysis Products");
@@ -24,6 +46,14 @@ angular.module('app', ['ui.router'])
                     description1: "QA functional automated test development using UFT for continous integration of our software",
                     description2: "UI front end development for PHA 6.0/7.0 using AngularJS, HTML5, & CSS"};
     $scope.rotations.push(rotation1);
+
+    //Projects
+    $scope.projects = [];
+    var project1 = {title: "Proficy Historian Analysis",
+                    location: "Foxboro, MA",
+                    description1: "QA functional automated test development using UFT for continous integration of our software",
+                    description2: "UI front end development for PHA 6.0/7.0 using AngularJS, HTML5, & CSS"};
+    $scope.projects.push(project1);
 
 
     //Skills
